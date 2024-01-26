@@ -1,6 +1,10 @@
 - 👋 Hi, I’m @Nrulafind
 - 👀 I’m interested in Programming
-- 🌱 I’m currently learning HTML, CSS, Javascript, PHP, Cloud Computing & SQL
+- 🌱 I’m currently learning front end: HTML, CSS, Javascript, React
+- 🌱 I’m currently learning back end: PHP, Python, NodeJS
+- 🌱 I’m currently learning: Machine Learning: Matplotlib, scikit-learn, Tensorflow
+- 🌱 I’m currently learning Cloud Computing: GCP
+- 🌱 I’m currently learning database: MySQL, NoSQL(Monggo)
 - 💞️ I Would Like to collaborate just reach me out
 - 📫 How to reach me https://www.linkedin.com/in/muhammad-nurul-arifin-668814258/
 

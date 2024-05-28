@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+* {
+  background: black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: hsl(243, 87%, 12%);
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+
+}
+
+.hero section {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  /* color: #070439; */
+  color: white;
+}
+
+.hero-left p {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: rgb(205, 191, 191);
+}
+
+.hero-left {
+  padding-right: 40px;
+}
+
+.hero-left a {
+  padding: 10px 15px;
+  background: #372cfa;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s all ease;
+  border-radius: 20px;
+}
+
+.hero-left a:hover {
+  background-color: #070439;
+}
+
+.right {
+  padding-top: 50px;
+}
+
+.right img {
+  margin-left: 10%;
+  width: 100%;
+  border-radius: 12%;
+
+}
+
+/* Typing Effect CSS */
+.typewrite {
+  color: #444444;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewrite>.wrap {
+  border-right: 0.15em solid #444444;
+  display: inline-block;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  nav img {
+    width: 100px;
+  }
+
+  nav li {
+    list-style: none;
+    margin: 0 8px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .right {
+    order: -1;
+    padding-bottom: 5rem;
+  }
+
+  /* Typing Effect CSS */
+  .typewrite {
+    color: #444444;
+    font-size: 1.0rem;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .typewrite>.wrap {
+    border-right: 0.1em solid #444444;
+    display: inline-block;
+  }
+}

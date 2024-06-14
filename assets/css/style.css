@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 
 body {
-  background: rgb(163, 128, 128);
+  background: #640D6B;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  color: white;
+  color: #F8D082;
 }
 
 .container {
@@ -42,8 +42,7 @@ nav li {
 }
 
 nav ul li a {
-  color: hsl(243, 87%, 12%);
-  color: white;
+  color: #E65C19;
 }
 
 nav ul li a:hover {
@@ -65,14 +64,14 @@ nav ul li a:hover {
   font-size: 2.5rem;
   margin-bottom: 25px;
   /* color: #070439; */
-  color: white;
+  color: #F8D082;
 }
 
 .hero-left p {
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 25px;
-  color: rgb(205, 191, 191);
+  color: #F8D082;
 }
 
 .hero-left {
@@ -81,8 +80,8 @@ nav ul li a:hover {
 
 .hero-left a {
   padding: 10px 15px;
-  background: #372cfa;
-  color: #fff;
+  background: #B51B75;
+  color: #E65C19;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
@@ -93,7 +92,7 @@ nav ul li a:hover {
 }
 
 .hero-left a:hover {
-  background-color: #070439;
+  background-color: #F8D082;
 }
 
 .right {
@@ -109,14 +108,14 @@ nav ul li a:hover {
 
 /* Typing Effect CSS */
 .typewrite {
-  color: #444444;
+  color: #F8D082;
   font-size: 1.5rem;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .typewrite>.wrap {
-  border-right: 0.15em solid #444444;
+  border-right: 0.15em solid #E65C19;
   display: inline-block;
 }
 
@@ -127,10 +126,10 @@ nav ul li a:hover {
 }
 
 .card {
-  background: #a706c3;
+  background: #E65C19;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px #a706c3;
+  box-shadow: 0 4px 8px #E65C19;
   transition: transform 0.3s ease;
   width: calc(33.333% - 20px);
 }
@@ -147,7 +146,7 @@ nav ul li a:hover {
 
 .card-body {
   padding: 20px;
-  color: aqua;
+  color: #B51B75;
 }
 
 .card-body h3 {
@@ -156,12 +155,12 @@ nav ul li a:hover {
 }
 
 .card-body p {
-  color: #bfbfbf;
+  color: #F8D082;
   margin-bottom: 20px;
 }
 
 .card-body a {
-  color: #372cfa;
+  color: #F8D082;
   font-weight: 600;
   text-decoration: none;
 }
@@ -187,7 +186,7 @@ aside .social-media ul {
   margin: auto;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  background-color: #db107c;
+  background-color: #B51B75;
 
   display: flex;
   flex-flow: column nowrap;
@@ -203,12 +202,12 @@ aside .social-media li {
 aside .social-media li a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: rgb(236, 11, 11);
+  color: #E65C19;
   transition: all 0.1s ease-in-out;
 }
 
 aside .social-media li a:hover {
-  color: #f4b506;
+  color: #F8D082;
 }
 
 
@@ -234,14 +233,14 @@ aside .social-media li a:hover {
 
   /* Typing Effect CSS */
   .typewrite {
-    color: #444444;
+    color: #F8D082;
     font-size: 1.0rem;
     white-space: nowrap;
     overflow: hidden;
   }
 
   .typewrite>.wrap {
-    border-right: 0.1em solid #444444;
+    border-right: 0.1em solid #E65C19;
     display: inline-block;
   }
 

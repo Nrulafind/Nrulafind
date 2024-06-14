@@ -1,12 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 
 body {
-  background: #640D6B;
+  background: #A2D2FF;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  color: #F8D082;
+  color: #FFF;
+  position: relative;
+  min-height: 100vh;
+}
+
+.bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 36%;
+  background: url('../img/Vector 1.png') no-repeat center center/cover;
+  z-index: -1;
+  border-radius: 2%;
 }
 
 .container {
@@ -14,12 +27,10 @@ body {
   max-width: 90%;
   margin: 0 auto;
   padding: 50px 0;
-
 }
 
 a {
   text-decoration: none;
-
 }
 
 nav {
@@ -42,7 +53,7 @@ nav li {
 }
 
 nav ul li a {
-  color: #E65C19;
+  color: #FFF;
 }
 
 nav ul li a:hover {
@@ -53,7 +64,6 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   margin-bottom: 5rem;
-
 }
 
 .hero section {
@@ -63,15 +73,14 @@ nav ul li a:hover {
 .hero-left h1 {
   font-size: 2.5rem;
   margin-bottom: 25px;
-  /* color: #070439; */
-  color: #F8D082;
+  color: #FFF;
 }
 
 .hero-left p {
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 25px;
-  color: #F8D082;
+  color: #FFF;
 }
 
 .hero-left {
@@ -80,8 +89,8 @@ nav ul li a:hover {
 
 .hero-left a {
   padding: 10px 15px;
-  background: #B51B75;
-  color: #E65C19;
+  background: #A2D2FF;
+  color: #FFF;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
@@ -92,23 +101,60 @@ nav ul li a:hover {
 }
 
 .hero-left a:hover {
-  background-color: #F8D082;
+  background-color: #E65C19;
 }
 
 .right {
-  padding-top: 50px;
+  padding-top: 1px;
 }
 
 .right img {
-  margin-left: 10%;
+  margin-left: 20%;
+  margin-right: 10%;
+  padding-bottom: 15%;
   width: 100%;
-  border-radius: 12%;
+  height: 100%;
+}
 
+.orbit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit img {
+  z-index: 1;
+  /* Ensure the image is above the bubbles */
+}
+
+.buble-hero {
+  position: absolute;
+  width: 100px;
+  /* Adjust size as needed */
+  height: 100px;
+  /* Adjust size as needed */
+  background: no-repeat center center/cover;
+  border-radius: 50%;
+  z-index: 0;
+  animation: orbit 5s linear infinite;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(300px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(300px) rotate(-360deg);
+  }
 }
 
 /* Typing Effect CSS */
 .typewrite {
-  color: #F8D082;
+  color: #FFF;
   font-size: 1.5rem;
   white-space: nowrap;
   overflow: hidden;
@@ -126,7 +172,7 @@ nav ul li a:hover {
 }
 
 .card {
-  background: #E65C19;
+  background: #7ABEFE;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px #E65C19;
@@ -150,17 +196,18 @@ nav ul li a:hover {
 }
 
 .card-body h3 {
+  color: #FFF;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .card-body p {
-  color: #F8D082;
+  color: #FFF;
   margin-bottom: 20px;
 }
 
 .card-body a {
-  color: #F8D082;
+  color: #FFF;
   font-weight: 600;
   text-decoration: none;
 }
@@ -168,7 +215,6 @@ nav ul li a:hover {
 .card-body a:hover {
   text-decoration: underline;
 }
-
 
 aside {
   position: fixed;
@@ -186,8 +232,8 @@ aside .social-media ul {
   margin: auto;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  background-color: #B51B75;
-
+  background: #7ABEFE;
+  border: 2px solid #FFF;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -202,14 +248,13 @@ aside .social-media li {
 aside .social-media li a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #E65C19;
+  color: #fff;
   transition: all 0.1s ease-in-out;
 }
 
 aside .social-media li a:hover {
-  color: #F8D082;
+  color: #CDB4DB;
 }
-
 
 @media screen and (max-width: 1000px) {
   nav img {
@@ -233,7 +278,7 @@ aside .social-media li a:hover {
 
   /* Typing Effect CSS */
   .typewrite {
-    color: #F8D082;
+    color: #FFF;
     font-size: 1.0rem;
     white-space: nowrap;
     overflow: hidden;
@@ -252,5 +297,15 @@ aside .social-media li a:hover {
 @media screen and (max-width: 600px) {
   .card {
     width: 100%;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .right {
+    order: -1;
+    padding-bottom: 2rem;
   }
 }

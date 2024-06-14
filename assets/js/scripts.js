@@ -51,3 +51,20 @@ TxtType.prototype.tick = function () {
         that.tick();
     }, delta);
 };
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const bubleHeroes = document.querySelectorAll('.buble-hero');
+    const images = [
+        './assets/img/web-development.png',
+        './assets/img/machine-learning.png',
+        './assets/img/server.png',
+        './assets/img/IMG_20230712_151629.jpg',
+    ];
+
+    bubleHeroes.forEach((buble, index) => {
+        const delay = index * 1.25;
+        buble.style.animationDelay = `${delay}s`;
+        buble.style.backgroundImage = `url(${images[index]})`;
+    });
+});

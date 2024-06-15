@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         './assets/img/web-development.png',
         './assets/img/machine-learning.png',
         './assets/img/server.png',
-        './assets/img/IMG_20230712_151629.jpg',
+        './assets/img/project-management.png',
     ];
 
     bubleHeroes.forEach((buble, index) => {
@@ -68,3 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
         buble.style.backgroundImage = `url(${images[index]})`;
     });
 });
+
+const style = document.createElement('style');
+style.type = 'text/css';
+style.innerHTML = `
+    @keyframes orbit {
+        0% {
+            transform: rotate(0deg) translateX(300px) rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg) translateX(300px) rotate(-360deg);
+        }
+    }
+`;
+document.head.appendChild(style);

@@ -159,11 +159,14 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  background-color: #A2D2FF;
 }
 
 .pict {
   flex-direction: column;
-  background-color: #A2D2FF;
+
+  opacity: 0.5;
+
 }
 
 .skills h1 {

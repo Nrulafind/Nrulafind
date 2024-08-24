@@ -190,17 +190,17 @@ nav ul li a:hover {
 /* Carousel track */
 .carousel-track {
   display: flex;
-  animation: scroll 2s linear infinite;
 }
 
 /* Individual skill cards */
 .pict {
   min-width: 20%;
-  transition: transform 0.100s ease;
+  margin-right: 105px;
+  transition: transform 0.5s ease;
 }
 
 /* Animation keyframes */
-@keyframes scroll {
+/* @keyframes scroll {
   0% {
     transform: translateX(100%);
   }
@@ -208,8 +208,7 @@ nav ul li a:hover {
   100% {
     transform: translateX(-100%);
   }
-}
-
+} */
 .card-container {
   display: flex;
   flex-wrap: wrap;

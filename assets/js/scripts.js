@@ -85,10 +85,7 @@ document.head.appendChild(style);
 
 document.addEventListener("DOMContentLoaded", function () {
     const track = document.querySelector(".carousel-track");
-    const slides = Array.from(track.children);
-
-    let trackWidth = track.scrollWidth;
-    let intervalId;
+    let slides = Array.from(track.children);
 
     // Duplicate slides for infinite loop
     function duplicateSlides() {
@@ -96,24 +93,31 @@ document.addEventListener("DOMContentLoaded", function () {
             const clone = slide.cloneNode(true);
             track.appendChild(clone);
         });
-        trackWidth = track.scrollWidth;
+    }
+
+    // Calculate track width dynamically
+    function updateTrackWidth() {
+        return track.scrollWidth;
     }
 
     // Start the carousel
     function startCarousel() {
-        intervalId = setInterval(() => {
-            track.style.transform = `translateX(-${trackWidth}px)`;
+        let trackWidth = updateTrackWidth();
+        track.style.transition = "transform 5s linear";
+        track.style.transform = `translateX(-${trackWidth / 2}px)`;
+
+        track.addEventListener("transitionend", () => {
+            track.style.transition = "none";
+            track.style.transform = "translateX(0)";
             setTimeout(() => {
-                track.style.transition = "none";
-                track.style.transform = "translateX(0)";
-                setTimeout(() => {
-                    track.style.transition = "transform 10s linear";
-                }, 50);
-            }, 10000); // match duration of scroll in keyframes
-        }, 10000); // match duration of scroll in keyframes
+                track.style.transition = "transform 5s linear";
+                track.style.transform = `translateX(-${trackWidth / 2}px)`;
+            }, 50);
+        });
     }
 
     // Initialize
     duplicateSlides();
     startCarousel();
 });
+

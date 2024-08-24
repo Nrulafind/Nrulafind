@@ -82,3 +82,38 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".carousel-track");
+    const slides = Array.from(track.children);
+
+    let trackWidth = track.scrollWidth;
+    let intervalId;
+
+    // Duplicate slides for infinite loop
+    function duplicateSlides() {
+        slides.forEach(slide => {
+            const clone = slide.cloneNode(true);
+            track.appendChild(clone);
+        });
+        trackWidth = track.scrollWidth;
+    }
+
+    // Start the carousel
+    function startCarousel() {
+        intervalId = setInterval(() => {
+            track.style.transform = `translateX(-${trackWidth}px)`;
+            setTimeout(() => {
+                track.style.transition = "none";
+                track.style.transform = "translateX(0)";
+                setTimeout(() => {
+                    track.style.transition = "transform 10s linear";
+                }, 50);
+            }, 10000); // match duration of scroll in keyframes
+        }, 10000); // match duration of scroll in keyframes
+    }
+
+    // Initialize
+    duplicateSlides();
+    startCarousel();
+});

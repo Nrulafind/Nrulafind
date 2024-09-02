@@ -221,6 +221,15 @@ nav ul li a:hover {
   overflow: hidden;
   box-shadow: 0 4px 8px #E65C19;
   transition: transform 0.3s ease;
+
+}
+
+.project {
+  width: calc(100% - 20px);
+  display: flex;
+}
+
+.blog {
   width: calc(33.333% - 20px);
 }
 
@@ -229,8 +238,6 @@ nav ul li a:hover {
 }
 
 .card-header img {
-  width: 100%;
-  height: 200px;
   object-fit: cover;
 }
 
@@ -342,6 +349,7 @@ aside .social-media li a:hover {
 }
 
 @media screen and (max-width: 600px) {
+
   .card {
     width: 100%;
   }

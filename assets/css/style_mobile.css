@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+
+    .card {
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .right {
+        order: -1;
+        padding-bottom: 2rem;
+    }
+}

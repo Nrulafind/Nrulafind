@@ -158,7 +158,7 @@ nav ul li a:hover {
 .pict-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1500px;
+
   background-color: #A2D2FF;
   overflow: hidden;
   width: 100%;
@@ -167,8 +167,8 @@ nav ul li a:hover {
 
 .pict {
   flex-direction: column;
-
   opacity: 0.5;
+  max-width: 50px;
   min-width: 20%;
   transition: transform 0.5s ease;
 }
@@ -190,6 +190,7 @@ nav ul li a:hover {
 /* Carousel track */
 .carousel-track {
   display: flex;
+  gap: 200px;
 }
 
 /* Individual skill cards */
@@ -212,7 +213,7 @@ nav ul li a:hover {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+
 }
 
 .card {
@@ -345,22 +346,5 @@ aside .social-media li a:hover {
 
   .card {
     width: calc(50% - 20px);
-  }
-}
-
-@media screen and (max-width: 600px) {
-
-  .card {
-    width: 100%;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero .right {
-    order: -1;
-    padding-bottom: 2rem;
   }
 }
